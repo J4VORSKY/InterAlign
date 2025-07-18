@@ -1,0 +1,123 @@
+.app {
+  font-family: Arial, Helvetica, sans-serif;
+  /* display: flex; */
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 50px;
+  position: relative;
+}
+canvas {
+  position: absolute;
+  width: calc(100%);
+  height: 200px;
+}
+
+.labels-box {
+  /* display: flex; */
+  border: 2px solid #fff;
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+  width: fit-content;
+  /* outline: 1px solid #ccc; */
+}
+
+.label {
+  display: inline-block;
+  font-size: 15px;
+  padding: 8px 12px;
+  margin: 5px 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 100px;
+  border: 2px solid rgb(82, 157, 243);
+}
+
+.labels-box .not-selected {
+  background-color: #e7e7e7;
+  cursor: not-allowed;
+  border-color: gray !important;
+}
+
+.labels-box .not-selected:hover {
+  border-color: gray !important;
+}
+
+
+.btn-align-pairs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 2px solid rgb(241, 173, 128);
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: #ffe4d7;
+}
+
+.btn-align-pairs:hover {
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid rgb(255, 157, 91);
+  margin-top: 10px;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: #ffd4be;
+}
+
+.scrollable-box {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.clicked-word {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.clicked-word:hover {
+  background-color: #f0f0f0;
+}
+
+.selected-label {
+  background-color: #87b9ef !important;
+}
+
+.label:hover {
+  border-color: #004fa3;
+}
+
+.btn-upload {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 2px solid rgb(190, 190, 190);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ececec;
+}
+
+.btn-upload:hover {
+  cursor: pointer;
+  background-color: #cfcece;
+}
+
+.btn-download {
+  border: 2px solid rgb(14, 173, 0);
+  background-color: #74db7c;
+}
+
+.btn-download:hover {
+  cursor: pointer;
+  background-color: rgb(110, 199, 102);
+}
+
+.alignments {
+  max-height: 500px;
+  overflow-y: auto;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}

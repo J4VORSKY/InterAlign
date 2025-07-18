@@ -1,0 +1,23 @@
+.alignments .btn {
+  margin-left: 10px;
+}
+
+.alignments .btn:hover {
+  cursor: pointer;
+}
+
+.alignments .change-label-btn {
+  color: #004fa3;
+}
+
+.alignments .change-label-btn:hover {
+  color: #133c68;
+}
+
+.alignments .delete-btn {
+  color: rgb(238, 95, 95);
+}
+
+.alignments .delete-btn:hover {
+  color: rgb(167, 74, 74);
+}
